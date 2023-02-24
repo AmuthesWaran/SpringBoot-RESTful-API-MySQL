@@ -2,6 +2,12 @@
 A simple RestAPI Using SpringBoot and MySQL
 
  - Start the application, Run on port 8021
+ - Dependencies Used
+    * Spring Data JPA
+    * Sping Web
+    * MySQL Driver
+    * Lombok
+ - DB name in MySQL - projects
 
  - JSON Format for the file transfer is as below (employeeId is Auto Generated)
 ```
