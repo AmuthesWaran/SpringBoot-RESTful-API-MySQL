@@ -7,13 +7,13 @@ import com.ammu.model.Employee;
 
 public interface EmployeeService {
 	
-	// Post
+	// POST
 	public Employee addAnEmployee(Employee employee);
 	
-	// Get an Employee
+	// GET an Employee
 	public Employee findEmployeeByID(Long employeeId);
 	
-	// Get all Employees
+	// GET all Employees
 	public List<Employee> getAllEmployees();
 	
 	// PUT

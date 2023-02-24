@@ -3,6 +3,8 @@ package com.ammu.model;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,6 +26,7 @@ public class Employee {
 	private String lastName;
 	private String email;
 	private Long phoneNumber;
+	@JsonFormat(pattern="dd-MM-yyyy")
 	private Date hireDate;
 	private BigDecimal salary;
 	

@@ -25,10 +25,10 @@ public class EmployeeController {
 	
 	@GetMapping("/")
 	public String sayHello() {
-		return "<h1>Hello, World!</h1>";
+		return "<h1>Hello, There</h1>";
 	}
 		
-	@PostMapping("/employees")
+	@PostMapping("/employee")
 	public ResponseEntity<Employee> addAnEmployee(@RequestBody Employee employee){
 		return new ResponseEntity<Employee>(empServ.addAnEmployee(employee), HttpStatus.ACCEPTED);
 	}
@@ -53,7 +53,5 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(empServ.amendAnEmployee(employee), HttpStatus.ACCEPTED);
 	}
 	
-	
-	
-	
+
 }
