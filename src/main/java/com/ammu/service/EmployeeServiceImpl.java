@@ -3,10 +3,12 @@ package com.ammu.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ammu.model.Employee;
 import com.ammu.repository.EmployeeRepository;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
@@ -29,7 +31,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Employee amendAnEmployee(Employee employee) {
-		return null;
+		Employee updatedEmployee = empRepo.findById(employee.getEmployeeId()).get();
+		updatedEmployee.setEmail(employee.getEmail());
+		updatedEmployee.setFirstName(employee.getFirstName());
+		updatedEmployee.setLastName(employee.getLastName());
+		updatedEmployee.setHireDate(employee.getHireDate());
+		updatedEmployee.setPhoneNumber(employee.getPhoneNumber());
+		updatedEmployee.setSalary(employee.getSalary());
+		
+		return empRepo.save(updatedEmployee);
+		
+		
 	}
 
 	@Override
