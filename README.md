@@ -1,15 +1,18 @@
 # SpringBoot-Rest-API-MySQL
 A simple RestAPI Using SpringBoot and MySQL
 
- - Start the application, Run on port 8021
+ - Start the application, Runs on port 8021
  - Dependencies Used
     * Spring Data JPA
-    * Sping Web
+    * Spring Web
     * MySQL Driver
     * Lombok
- - DB name in MySQL - projects
+    
+ - MySQL Database info:
+    * Name of the database: projects
+    * Name of the table: employee
 
- - JSON Format for the file transfer is as below (employeeId is Auto Generated)
+ - JSON Format used for file transfer is as below (employeeId is Auto Generated)
 ```
 {
     "firstName": "User",
@@ -17,7 +20,6 @@ A simple RestAPI Using SpringBoot and MySQL
     "email": "UserN@outlook.com",
     "phoneNumber": 124585965,
     "hireDate": "22-04-2002",
-    "salary": 1524875142.04400
+    "salary": 1524.044
 }
 ```
- 
