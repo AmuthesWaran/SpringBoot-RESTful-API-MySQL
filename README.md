@@ -1,7 +1,7 @@
 # SpringBoot-Rest-API-MySQL
 A simple RestAPI Using SpringBoot and MySQL
 
- - Start the application, Runs on port 8021
+ - Start the application, Runs on port 8081
  - Dependencies Used
     * Spring Data JPA
     * Spring Web

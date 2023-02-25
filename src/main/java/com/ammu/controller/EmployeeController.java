@@ -19,7 +19,6 @@ import com.ammu.service.EmployeeService;
 @RestController
 public class EmployeeController {
 	
-	
 	@Autowired
 	EmployeeService empServ;
 	
@@ -30,7 +29,7 @@ public class EmployeeController {
 		
 	@PostMapping("/employee")
 	public ResponseEntity<Employee> addAnEmployee(@RequestBody Employee employee){
-		return new ResponseEntity<Employee>(empServ.addAnEmployee(employee), HttpStatus.ACCEPTED);
+		return new ResponseEntity<Employee>(empServ.addAnEmployee(employee), HttpStatus.CREATED);
 	}
 	
 	@GetMapping("/employees")
@@ -52,6 +51,5 @@ public class EmployeeController {
 	public ResponseEntity<Employee> updateAnEmployee(@RequestBody Employee employee){
 		return new ResponseEntity<Employee>(empServ.amendAnEmployee(employee), HttpStatus.ACCEPTED);
 	}
-	
 
 }
