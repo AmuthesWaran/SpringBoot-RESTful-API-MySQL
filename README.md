@@ -6,11 +6,12 @@ A simple RestAPI Using SpringBoot and MySQL
     * Spring Data JPA
     * Spring Web
     * MySQL Driver
-    * Lombok
+    * Lombok <br>
+    (Refer [offical doumentation](https://projectlombok.org/) to install lombok in your IDE )
     
  - MySQL Database info:
-    * Name of the database: projects
-    * Name of the table: employee
+    * Name of the database : projects
+    * Name of the table    : employee
 
  - JSON Format used for file transfer is as below (employeeId is Auto Generated)
 ```
