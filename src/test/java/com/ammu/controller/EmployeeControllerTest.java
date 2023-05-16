@@ -1,6 +1,5 @@
 package com.ammu.controller;
 
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -17,7 +16,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.json.JacksonTester;
 import org.springframework.http.MediaType;
@@ -57,12 +55,12 @@ public class EmployeeControllerTest {
 	}
 
 	@Test
-	void test() throws Exception {
+	public void givenEmployeeToSaveThenShouldReturnSavedEmployee() throws Exception {
 		String jsonContent = readFileAsString("src/test/resources/TestEmployeeData.JSON");
 		Employee employee = jsonTester.parseObject(jsonContent);
 		System.out.println(employee);
 		
-		when(empServ.addAnEmployee(any())).thenReturn(employee);
+		when(empServ.addAnEmployee(employee)).thenReturn(employee);
         mockMvc.perform(post("/employee")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(asJsonString(employee)))

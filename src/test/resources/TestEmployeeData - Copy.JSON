@@ -1,0 +1,40 @@
+{
+    "saveAnEmployee": {
+        "employeeId": 1,
+        "firstName": "User",
+        "lastName": "Name",
+        "email": "UserN@outlook.com",
+        "phoneNumber": 124585965,
+        "hireDate": "22-04-2002",
+        "salary": 1524.044
+    },
+    "getAllEmployee": [
+        {
+            "employeeId": 1,
+            "firstName": "User",
+            "lastName": "Name",
+            "email": "UserN@outlook.com",
+            "phoneNumber": 124585965,
+            "hireDate": "22-04-2002",
+            "salary": 1524.044
+        },
+        {
+            "employeeId": 1,
+            "firstName": "User",
+            "lastName": "Name",
+            "email": "UserN@outlook.com",
+            "phoneNumber": 124585965,
+            "hireDate": "22-04-2002",
+            "salary": 1524.044
+        },
+        {
+            "employeeId": 1,
+            "firstName": "User",
+            "lastName": "Name",
+            "email": "UserN@outlook.com",
+            "phoneNumber": 124585965,
+            "hireDate": "22-04-2002",
+            "salary": 1524.044
+        }
+    ]
+}
