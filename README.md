@@ -1,7 +1,7 @@
 # SpringBoot-Rest-API-MySQL
 A simple RestAPI Using SpringBoot and MySQL
 
- - Start the application, Runs on port 8081
+ - Start the application, Runs on port 8082
  - Dependencies Used
     * Spring Data JPA
     * Spring Web
@@ -10,10 +10,13 @@ A simple RestAPI Using SpringBoot and MySQL
     (Refer [offical doumentation](https://projectlombok.org/) to install lombok in your IDE )
     
  - MySQL Database info:
-    * Name of the database : projects
-    * Name of the table    : employee
+    * Name of the database : ```projects``` <br>
+   Run this below query to create a database in your MYSQL. <br>
+   ```CREATE DATABASE projects``` <br><br>
+    * Name of the table    : ```employee``` <br>
+    Table gets auto created when the application is started.
 
- - JSON Format used for file transfer is as below (employeeId is Auto Generated)
+ - JSON Format used to transfer is as below (employeeId is Auto Generated)
 ```
 {
     "firstName": "User",
