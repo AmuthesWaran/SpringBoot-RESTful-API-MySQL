@@ -61,7 +61,7 @@ public class EmployeeControllerTest {
 		System.out.println(employee);
 		
 		when(empServ.addAnEmployee(employee)).thenReturn(employee);
-        mockMvc.perform(post("/employee")
+        mockMvc.perform(post("/emp-portal/employee")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(asJsonString(employee)))
                 .andExpect(status().isCreated())

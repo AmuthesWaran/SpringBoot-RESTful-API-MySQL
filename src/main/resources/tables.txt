@@ -1,0 +1,10 @@
+ create table employee (
+       empid bigint not null auto_increment,
+        email varchar(255),
+        fname varchar(255),
+        hiredate datetime(6),
+        lname varchar(255),
+        phoneno bigint,
+        salary decimal(38,2),
+        primary key (empid)
+    ) engine=InnoDB

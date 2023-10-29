@@ -31,12 +31,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Employee amendAnEmployee(Employee employee) {
-		Employee updatedEmployee = empRepo.findById(employee.getEmployeeId()).get();
+		Employee updatedEmployee = empRepo.findById(employee.getEmpId()).get();
 		updatedEmployee.setEmail(employee.getEmail());
-		updatedEmployee.setFirstName(employee.getFirstName());
-		updatedEmployee.setLastName(employee.getLastName());
+		updatedEmployee.setFName(employee.getFName());
+		updatedEmployee.setLName(employee.getLName());
 		updatedEmployee.setHireDate(employee.getHireDate());
-		updatedEmployee.setPhoneNumber(employee.getPhoneNumber());
+		updatedEmployee.setPhoneNo(employee.getPhoneNo());
 		updatedEmployee.setSalary(employee.getSalary());
 		
 		return empRepo.save(updatedEmployee);
